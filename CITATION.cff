@@ -1,0 +1,29 @@
+cff-version: 1.2.0
+message: "If you use Chemistry Mastery in teaching, study or research, please cite it as below."
+title: "Chemistry Mastery: an open, Mermaid-illustrated chemistry curriculum"
+abstract: >-
+  A structured, open-source chemistry curriculum spanning absolute beginner
+  foundations through undergraduate, postgraduate and research-level material.
+  Content is written in Markdown with LaTeX mathematics, balanced chemical
+  equations and extensive Mermaid diagrams, and is accompanied by worked
+  examples, exercises and fully worked solutions.
+type: software
+authors:
+  - family-names: "Chemistry Mastery contributors"
+    name: "Chemistry Mastery contributors"
+version: "0.1.0"
+date-released: "2026-11-05"
+license: MIT
+repository-code: "https://github.com/metodiev/Chemistry"
+keywords:
+  - chemistry
+  - education
+  - open educational resources
+  - curriculum
+  - mermaid
+  - markdown
+  - physical chemistry
+  - organic chemistry
+  - inorganic chemistry
+  - analytical chemistry
+  - biochemistry

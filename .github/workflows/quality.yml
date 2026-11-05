@@ -1,0 +1,32 @@
+name: Quality gates
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    name: Validate Markdown, diagrams and chapter structure
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out the repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Validate internal links
+        run: python3 scripts/validate_links.py
+
+      - name: Validate Mermaid blocks
+        run: python3 scripts/validate_mermaid.py
+
+      - name: Validate chapter structure
+        run: python3 scripts/validate_chapters.py
